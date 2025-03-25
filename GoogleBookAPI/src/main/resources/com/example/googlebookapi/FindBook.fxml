@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.googlebookapi.MainController">
+   <children>
+      <TextField fx:id="bookTitle" layoutX="125.0" layoutY="54.0" prefHeight="25.0" prefWidth="285.0" promptText="Enter book title" />
+      <Button layoutX="422.0" layoutY="54.0" mnemonicParsing="false" onAction="#getBookData" text="Search" />
+      <ScrollPane layoutX="26.0" layoutY="96.0" prefHeight="289.0" prefWidth="547.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="5000.0" prefWidth="545.0">
+               <children>
+                  <Label fx:id="resultLabel" alignment="TOP_LEFT" layoutX="1.0" prefHeight="5000.0" prefWidth="531.0" text="Label" textAlignment="JUSTIFY" wrapText="true">
+                     <font>
+                        <Font size="15.0" />
+                     </font></Label>
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>
